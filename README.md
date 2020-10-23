@@ -2,20 +2,25 @@
 I can't find a boilerplate for these new major versions, so I made one!
 
 ### TypeScript
-> `npm install typescript`
+
+* `typescript`
+
+* `tsconfig.json` is the config file for TypeScript
 
 ### Webpack
-> `npm install webpack`
 
-To load TypeScript with Webpack, we need `ts-loader`
-> `npm install ts-loader`
+* `webpack` 
+
+* `ts-loader`: to load TypeScript with Webpack, we need `ts-loader`
+
+* `webpack-merge`: to merge webpack config files
 
 ### React
-> `npm install react`
 
-`react-dom` is necessary for react to be used for the web
-> `npm install react-dom`
+* `react`
 
-To make react have type declarations for TypeScript
-> `npm install @types/react @types/react-dom`
+* `react-dom`:  necessary for react to be used for the web
+
+* To make react have type declarations for TypeScript
+    > `npm install @types/react @types/react-dom`
  

@@ -1,19 +1,25 @@
 {
-  "name": "react-typscript-4-webpack-5",
+  "name": "react-17-typscript-4-webpack-5",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "author": "",
   "license": "isc",
+  "scripts": {
+    "start:dev": "webpack-dev-server --config webpack/webpack.dev.js"
+  },
   "dependencies": {
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
-  "devdependencies": {
-    "@types/react-dom": "^16.9.8",
+  "devDependencies": {
     "@types/react": "^16.9.53",
-    "webpack": "^5.2.0",
+    "@types/react-dom": "^16.9.8",
     "ts-loader": "^8.0.6",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "webpack": "^5.2.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.2.0"
   }
 }
