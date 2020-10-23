@@ -9,11 +9,13 @@ I can't find a boilerplate for these new major versions, so I made one!
 
 ### Webpack
 
-* `webpack` 
+* `webpack`: configs are commented
 
 * `ts-loader`: to load TypeScript with Webpack, we need `ts-loader`
 
 * `webpack-merge`: to merge webpack config files
+
+* `webpack-dev-server`, `webpack-cli` are used to serve a development server
 
 ### React
 
