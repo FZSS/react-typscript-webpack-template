@@ -1,3 +1,9 @@
+const path = require('path');
+
+const getPathFromSrc = (p) => {
+  return path.resolve(__dirname, '..', 'src', p);
+}
+
 module.exports = {
   // entry tells webpack where to start packing
   entry: {
@@ -16,5 +22,10 @@ module.exports = {
   resolve: {
     // find modules with these paths in order
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
+    // use alias so that we don't have to use the ../.
+    alias: {
+      components: getPathFromSrc('components'),
+      utils: getPathFromSrc('utils'),
+    }
   },
 };

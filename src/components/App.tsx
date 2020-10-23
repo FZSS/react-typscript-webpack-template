@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { greet } from '../utils/GreetingUtils';
+import { greet } from 'utils/GreetingUtils';
 
 const App: React.FunctionComponent = () => {
   const text = greet('kevin')
