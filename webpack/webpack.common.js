@@ -2,7 +2,7 @@ const path = require('path');
 
 const getPathFromSrc = (p) => {
   return path.resolve(__dirname, '..', 'src', p);
-}
+};
 
 module.exports = {
   // entry tells webpack where to start packing
@@ -17,6 +17,11 @@ module.exports = {
         use: 'ts-loader',
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+        exclude: /node_modules/,
+      },
     ],
   },
   resolve: {
@@ -24,8 +29,10 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js', '.jsx'],
     // use alias so that we don't have to use the ../.
     alias: {
-      components: getPathFromSrc('components'),
+      store: getPathFromSrc('store'),
+      api: getPathFromSrc('api'),
       utils: getPathFromSrc('utils'),
-    }
+      components: getPathFromSrc('components'),
+    },
   },
 };

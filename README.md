@@ -3,9 +3,11 @@ I can't find a boilerplate for these new major versions, so I made one!
 
 ### TypeScript
 
-* `typescript`
+* `typescript`: v 4.0
 
-* `tsconfig.json` is the config file for TypeScript
+* `tsconfig.json` is the config file for TypeScript 
+  
+* Note on `baseUrl` and `paths`: if I import any dependencies, it seems that I need to set `"moduleResolution": "Node"`, which requires me to add `baseUrl` and `paths` to make resolution successful.
 
 ### Webpack
 

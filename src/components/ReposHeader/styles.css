@@ -1,0 +1,16 @@
+.repos-header {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.repos-header-buttons {
+    display: flex;
+}
+.repos-header-button {
+    margin: 1rem;
+}
+.repos-header-button:first-of-type {
+    margin-right: 0;
+    margin-left: 2rem;
+}
