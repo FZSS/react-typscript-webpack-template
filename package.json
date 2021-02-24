@@ -1,33 +1,37 @@
 {
-  "name": "react-17-typscript-4-webpack-5",
+  "name": "databricks-take-home-kevin-chen",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "author": "",
+  "author": "kevin chen: kevin@fangzhou.io",
   "license": "isc",
   "scripts": {
-    "start:dev": "webpack-dev-server --config webpack/webpack.dev.js"
+    "test": "jest",
+    "dev": "webpack-dev-server --config webpack/webpack.dev.js"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.57",
     "@reduxjs/toolkit": "^1.5.0",
-    "@types/react-redux": "^7.1.16",
     "axios": "^0.21.1",
     "lodash.debounce": "^4.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
-    "redux-thunk": "^2.3.0",
-    "style-loader": "^2.0.0"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "@types/lodash.debounce": "^4.0.6",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.16",
     "css-loader": "^5.0.2",
+    "jest": "^26.6.3",
     "prettier": "^2.2.1",
+    "style-loader": "^2.0.0",
+    "ts-jest": "^26.5.2",
     "ts-loader": "^8.0.6",
     "typescript": "^4.0.3",
     "webpack": "^5.2.0",

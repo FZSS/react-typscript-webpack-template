@@ -3,6 +3,7 @@ import { Repo } from 'store/repos/state';
 
 export const PAGE_SIZE = 10;
 
+/** Retrieve repos based on given keyword */
 export const getRepos = async (
   keyword: string,
   pageNumber: number = 1
@@ -28,6 +29,7 @@ export const getRepos = async (
   return repos;
 };
 
+/** Retrieve commits info based on commits url */
 export const getCommits = async (commitsUrl: string): Promise<string[]> => {
   const url = `${commitsUrl}?per_page=3`; // only retrieve last 3 commits
 
@@ -42,6 +44,7 @@ export const getCommits = async (commitsUrl: string): Promise<string[]> => {
   return Array.from(set) as string[];
 };
 
+/** Retrieve last fork info based on forks url */
 export const getLastForkInfo = async (
   forksUrl: string
 ): Promise<[string | null, string | null]> => {
