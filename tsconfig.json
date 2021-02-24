@@ -3,6 +3,7 @@
     "strict": true,
     "moduleResolution": "Node",
     "sourceMap": true,
+    "esModuleInterop": true,
     "module": "es6",
     "target": "es5",
     "lib": [
