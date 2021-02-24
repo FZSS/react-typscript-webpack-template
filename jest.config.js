@@ -1,6 +1,3 @@
-const { pathsToModuleNameMapper } = require('ts-jest/utils');
-const { compilerOptions } = require('./tsconfig');
-
 module.exports = {
   testMatch: [
     '**/__tests__/**/*.+(ts|tsx|js)',
@@ -9,8 +6,11 @@ module.exports = {
   transform: {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
+  setupFilesAfterEnv: ['<rootDir>/.set-up-enzyme.js'],
   moduleNameMapper: {
+    // skip css
     '\\.(css)$': 'identity-obj-proxy',
+    // map baseUrl + paths correctly
     '^components/(.*)$': '<rootDir>/src/components/$1',
     '^utils/(.*)$': '<rootDir>/src/utils/$1',
     '^store/(.*)$': '<rootDir>/src/store/$1',
