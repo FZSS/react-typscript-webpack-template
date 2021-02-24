@@ -8,7 +8,7 @@ module.exports = {
   },
   setupFilesAfterEnv: ['<rootDir>/.set-up-enzyme.js'],
   moduleNameMapper: {
-    // skip css
+    // skip css to make it to nada
     '\\.(css)$': 'identity-obj-proxy',
     // map baseUrl + paths correctly
     '^components/(.*)$': '<rootDir>/src/components/$1',
